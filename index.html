@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech Program Emailer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bookman+Old+Style&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        /* Keyframe animation for blinking background */
+        @keyframes blink-bg {
+            0% {
+                background-color: #d71a21;
+                /* Start color */
+            }
+
+            50% {
+                background-color: #044ea2;
+                /* End color */
+            }
+
+            100% {
+                background-color: #d71a21;
+                /* Return to start color */
+            }
+        }
+
+        /* Apply the animation to the .blinking-bg class */
+        .blinking-bg {
+            animation: blink-bg 1.5s infinite;
+            /* 1.5s duration, infinite loop */
+        }
+
+        /* Optionally, add hover effect */
+        .blinking-bg:hover {
+            background-color: #044ea2;
+        }
+
+        /* Keyframe animation for the marquee effect */
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .marquee {
+            animation: marquee 10s linear infinite alternate;
+        }
+
+
+        /* Wrapper with a fixed background */
+        .marquee-wrapper {
+            background-color: #ffdb56;
+            /* Set fixed background color */
+            padding: 10px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Apply the marquee animation to the text */
+        .marquee-text {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <header class="bg-white py-3 flex justify-between items-center px-4">
+            <!-- Logo on the left -->
+            <div class="flex-row w-full">
+                <div class="flex justify-between py-3">
+                    <div class="flex items-center">
+                        <img src="/image/logo.png" alt="Accurate Institute Logo" class="h-16">
+                    </div>
+
+                    <!-- Social Media Icons on the right -->
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com" target="_blank"
+                            class="bg-white p-2 shadow-md border-2 border-dotted border-gray-300 hover:text-blue-800 hover:bg-blue-50 transition duration-200 flex justify-center items-center"
+                            style="width: 40px; height: 40px; border-radius: 10%;">
+                            <i class="fab fa-facebook-f text-2xl text-blue-600"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank"
+                            class="bg-white p-2 shadow-md border-2 border-dotted border-gray-300 hover:text-pink-800 hover:bg-pink-50 transition duration-200 flex justify-center items-center"
+                            style="width: 40px; height: 40px; border-radius: 10%;">
+                            <i class="fab fa-instagram text-2xl text-pink-600"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank"
+                            class="bg-white p-2 shadow-md border-2 border-dotted border-gray-300 hover:text-blue-900 hover:bg-blue-50 transition duration-200 flex justify-center items-center"
+                            style="width: 40px; height: 40px; border-radius: 10%;">
+                            <i class="fab fa-linkedin-in text-2xl text-blue-700"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-5 mb-3 text-center">
+                    <h3 class="text-3xl font-semibold text-[#054da2] uppercase font-serif">
+                        Engineer Your Future with Cutting-Edge Specializations!
+                    </h3>                    
+                </div>
+            </div>
+
+
+
+        </header>
+
+
+        <div class="w-full relative">
+            <img src="/image/email-banner.jpg" alt="Graduation Celebration" class="w-full">
+        </div>
+
+        <section class="p-8 text-center">
+            <p class="text-gray-700 text-lg">
+                Join us in celebrating the outstanding achievements of our students and faculty members who make
+                academic excellence a reality. Their dedication inspires us all to aim higher and achieve greatness.
+            </p>
+        </section>
+
+        <!-- Specializations Section -->
+        <section class="px-8 pb-8">
+            <h2 class="text-xl font-bold text-gray-800 mb-6 text-center">Specializations Offered</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Mechanical Engineering -->
+                <div
+                    class="bg-gray-50 rounded-lg shadow-lg p-6 text-center border-2 border-dotted border-blue-500 box-border">
+                    <i class="fas fa-cogs text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-blue-900 font-semibold text-lg mb-2">Mechanical Engineering</h3>
+                </div>
+                <!-- Computer Science & Engineering -->
+                <div
+                    class="bg-gray-50 rounded-lg shadow-lg p-6 text-center border-2 border-dotted border-blue-500 box-border">
+                    <i class="fas fa-laptop-code text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-blue-900 font-semibold text-lg mb-2">Computer Science & Engineering</h3>
+                </div>
+                <!-- Electronics & Communication Engineering -->
+                <div
+                    class="bg-gray-50 rounded-lg shadow-lg p-6 text-center border-2 border-dotted border-blue-500 box-border">
+                    <i class="fas fa-plug text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-blue-900 font-semibold text-lg mb-2">Electronics & Communication Engineering</h3>
+                </div>
+                <!-- Civil Engineering -->
+                <div
+                    class="bg-gray-50 rounded-lg shadow-lg p-6 text-center border-2 border-dotted border-blue-500 box-border">
+                    <i class="fas fa-hard-hat text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-blue-900 font-semibold text-lg mb-2">Civil Engineering</h3>
+                </div>
+                <!-- Electrical & Electronics Engineering -->
+                <div
+                    class="bg-gray-50 rounded-lg shadow-lg p-6 text-center border-2 border-dotted border-blue-500 box-border">
+                    <i class="fas fa-bolt text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-blue-900 font-semibold text-lg mb-2">Electrical & Electronics Engineering</h3>
+                </div>
+                <!-- AI & ML -->
+                <div
+                    class="bg-gray-50 rounded-lg shadow-lg p-6 text-center border-2 border-dotted border-blue-500 box-border">
+                    <i class="fas fa-robot text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-blue-900 font-semibold text-lg mb-2">AI & ML</h3>
+                </div>
+                <!-- Data Science -->
+                <div
+                    class="bg-gray-50 rounded-lg shadow-lg p-6 text-center border-2 border-dotted border-blue-500 box-border">
+                    <i class="fas fa-chart-line text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-blue-900 font-semibold text-lg mb-2">Data Science</h3>
+                </div>
+                <!-- Cybersecurity -->
+                <div
+                    class="bg-gray-50 rounded-lg shadow-lg p-6 text-center border-2 border-dotted border-blue-500 box-border">
+                    <i class="fas fa-lock text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-blue-900 font-semibold text-lg mb-2">Cybersecurity</h3>
+                </div>
+                <!-- Internet of Things (IoT) -->
+                <div
+                    class="bg-gray-50 rounded-lg shadow-lg p-6 text-center border-2 border-dotted border-blue-500 box-border">
+                    <i class="fas fa-network-wired text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-blue-900 font-semibold text-lg mb-2">Internet of Things (IoT)</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Highlights Section -->
+        <section class="relative px-8 py-12 bg-cover bg-center rounded-lg shadow-md"
+            style="background-image: url('/image/close-up-students-indoors.jpg');">
+            <!-- Blue overlay -->
+            <div class="absolute inset-0 bg-blue-900 opacity-80 rounded-lg"></div>
+
+            <!-- Inner content with white background -->
+            <div class="relative z-10 bg-white p-8 rounded-lg shadow-lg bg-opacity-65">
+                <h2 class="text-2xl font-bold text-blue-900 mb-6 text-center">B.Tech Program Highlights</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-lightbulb text-2xl text-blue-900 bg-white p-4 bg-opacity-65 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">Future-Focused Specializations</h3>
+                            <p class="text-gray-700">Cutting-edge fields like AI & ML, Data Science, Robotics,
+                                Cybersecurity, IoT, and more.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-graduation-cap text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">100% Placement Assistance</h3>
+                            <p class="text-gray-700">Guaranteed support to launch your career.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-briefcase text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">Internships & Live Projects</h3>
+                            <p class="text-gray-700">Gain real-world experience with industry projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-certificate text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">Industry Certifications</h3>
+                            <p class="text-gray-700">Boost your credentials with recognized certifications.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-rocket text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">Startup & Incubation Support</h3>
+                            <p class="text-gray-700">Turn ideas into reality with incubation programs.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-chalkboard-teacher text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">Experienced Faculty & Mentors</h3>
+                            <p class="text-gray-700">Guidance from top faculty and industry experts.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-users text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">1:1 Mentorship Program</h3>
+                            <p class="text-gray-700">Personalized mentoring for every student.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-building text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">Industrial Visits & Corporate Connects</h3>
+                            <p class="text-gray-700">Bridge the gap between academics and industry.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-dollar-sign text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">Scholarships up to 100%</h3>
+                            <p class="text-gray-700">Merit-based financial assistance available.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-users-cog text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">Soft Skills & Personality Development</h3>
+                            <p class="text-gray-700">Prepare for professional success.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-flask text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">Innovation & Research Clubs</h3>
+                            <p class="text-gray-700">Join clubs to explore and innovate.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-laptop text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">State-of-the-Art Labs & Workshops</h3>
+                            <p class="text-gray-700">Advanced infrastructure for hands-on learning.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-tv text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">Smart Classrooms & Learning Resources</h3>
+                            <p class="text-gray-700">Interactive learning with modern tools.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <i
+                            class="fas fa-home text-2xl text-blue-900 bg-opacity-65 bg-white p-4 rounded-full shadow-lg border-2 border-blue-900 w-16 h-16 flex items-center justify-center"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-900">On-Campus Hostel & Transport Facilities</h3>
+                            <p class="text-gray-700">Comfortable and convenient campus life.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="bg-blue-50 p-8 text-center">
+            <div class="marquee-wrapper">
+                <h2 class="text-2xl font-bold text-blue-900 marquee-text">
+                    🎓 Admissions Open – Apply Now!
+                </h2>
+            </div>
+            <p class="text-gray-700 mt-4 font-bold">
+                Enroll in our B.Tech Program and explore a future of innovation and excellence.
+            </p>
+            
+            <a href="#"
+                class="mt-6 inline-block bg-blue-900 text-white py-3 px-6 rounded-lg shadow hover:bg-blue-700 text-lg font-semibold blinking-bg">
+                Apply Today
+            </a>
+
+        </section>
+
+        <footer class="bg-gray-800 text-white p-6">
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center">
+                <div class="flex text-center md:text-right">
+                    <p class="text-xl flex items-center justify-center md:justify-end space-x-2 pr-3">
+                    <i class="fa-solid fa-phone text-white h-8 w-8 flex items-center justify-center"></i>
+                    <span>+91 9560148370</span>
+                    </p>
+                    <div class="border border-red-500"></div>
+                    <p class="text-xl flex items-center justify-center md:justify-end space-x-2 pl-3">
+                    <i class="fa-solid fa-globe text-white h-8 w-8 flex items-center justify-center"></i>
+                    <a href="https://www.accurate.in" class="hover:underline">www.accurate.in</a>
+                    </p>
+                    </div>
+            </div>
+            <p class="text-center text-sm mt-4">© 2024 Accurate Group of Institutions. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
